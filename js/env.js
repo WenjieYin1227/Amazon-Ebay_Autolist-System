@@ -1,0 +1,1 @@
+var base_url = 'http://3.135.237.73/index.php/api';

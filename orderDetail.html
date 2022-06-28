@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 3 | User Profile</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+
+      <!-- SEO Meta Tags -->
+      <meta name="description" content="Create a stylish landing page for your business startup and get leads for the offered services with this HTML landing page template.">
+      <meta name="author" content="Inovatik">
+  
+      <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+      <meta property="og:site_name" content="" /> <!-- website name -->
+      <meta property="og:site" content="" /> <!-- website link -->
+      <meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+      <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+      <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+      <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+      <meta property="og:type" content="article" />
+  
+      <!-- Website Title -->
+      <title>Evolo - StartUp HTML Landing Page Template</title>
+   
+      <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="css/fontawesome-all.css" rel="stylesheet">
+      <link href="css/swiper.css" rel="stylesheet">
+      <link href="css/magnific-popup.css" rel="stylesheet">
+      <link href="css/styles.css" rel="stylesheet"> 
+      <link href="css/toastr.min.css" rel="stylesheet">
+    
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="./css/plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="./css/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="./css/dist/css/adminlte.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  	
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon1.png">
+
+    
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+    
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top"  style="background-color: #00bfd8 !important;">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Evolo</a> -->
+
+        <!-- Image Logo -->
+        <a class="navbar-brand" href="index.html" style="margin-left: 5%;"><img src="images/logo.png" alt="alternative"></a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+       
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="ManageProduct.html">商品管理<span class="sr-only">(current)</span></a>
+                </li>
+                 <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                     インポート系
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="importAsin.html"><i class="fas fa-upload"></i> ー括インポート</a>
+                        <a class="dropdown-item" href="blacklist.html"><i class="fas fa-eye-slash"></i> 
+                            ブラックリスト</a>
+                        <a class="dropdown-item" href="checkproduct.html"><i class="fas fa-desktop"></i> インポート履歴</a>
+                    </div>
+                    <!-- <div class="message-ul dropdown-menu dropdown-menu-right notification-dropdown show" x-placement="bottom-end" style="position: absolute; transform: translate3d(-114px, 36px, 0px); top: 0px; left: 0px; will-change: transform;">
+                    sssss</div> -->
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                     注文系
+                    </a>
+                    <div class="dropdown-menu">
+                    <a class="dropdown-item" href="manageOrder.html"><i class="fas fa-shipping-fast"></i>
+                        注文管理</a>
+                    <!-- <a class="dropdown-item" href="blacklist.html">Black list</a>
+                    <a class="dropdown-item" href="checkproduct.html">Check Product</a> -->
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="managestock.html">Qoo10系</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                     管理系
+                    </a>
+                    <div class="dropdown-menu">
+                    <a class="dropdown-item" href="editShopping.html"><i class="fas fa-shopping-cart"></i> ショップ情報</a>
+                    <a class="dropdown-item" href="qAnalyze.html"><i class="fas fa-chart-bar"></i> PV分析</a>
+                    <!-- <a class="dropdown-item" href="checkproduct.html">Check Product</a> -->
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="register.html">登録</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="login.html">ログイン</a>
+                </li>
+            </ul>
+            
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+  <div class="container">
+      <div class="row" style="margin-top:130px">
+        <div class="form-group col-md-3">
+            <label for="usr">Name:</label>
+            <input type="text" class="form-control" id="usr" name="username">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" name="password">
+          </div>
+
+          <div class="form-group col-md-3">
+            <label for="usr">Name:</label>
+            <input type="text" class="form-control" id="usr" name="username">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" name="password">
+          </div>
+      </div>
+
+      <div class="row" style="margin-top:0px">
+        <div class="form-group col-md-3">
+            <label for="usr">Name:</label>
+            <input type="text" class="form-control" id="usr" name="username">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" name="password">
+          </div>
+
+          <div class="form-group col-md-3">
+            <label for="usr">Name:</label>
+            <input type="text" class="form-control" id="usr" name="username">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" name="password">
+          </div>
+      </div>
+
+      <div class="row" style="margin-top:00px">
+        <div class="form-group col-md-3">
+            <label for="usr">Name:</label>
+            <input type="text" class="form-control" id="usr" name="username">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" name="password">
+          </div>
+
+          <div class="form-group col-md-3">
+            <label for="usr">Name:</label>
+            <input type="text" class="form-control" id="usr" name="username">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" name="password">
+          </div>
+      </div>
+   </div>
+   
+   <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Modal body..
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+<!-- jQuery -->
+<script src="./css/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="./css/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="./css/dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="./css/dist/js/demo.js"></script>
+<!-- jQuery -->
+<!-- <script src="./css/plugins/jquery/jquery.min.js"></script> -->
+<!-- Bootstrap 4 -->
+<script src="./css/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables -->
+<script src="./css/plugins/datatables/jquery.dataTables.js"></script>
+<script src="./css/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+
+<script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+<script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+<script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+<script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+<script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+<script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+<script src="js/scripts.js"></script> <!-- Custom scripts -->
+<script src="js/toastr.js"></script>
+
+
+<!-- Scripts -->
+<script type="text/javascript" src="js/env.js"></script>
+<script src="js/orderDetail.js"></script>
+</body>
+</html>
+</body>
+</html>

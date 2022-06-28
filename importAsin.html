@@ -1,0 +1,148 @@
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Amazon-Ebay</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="css/fontawesome-all.css" rel="stylesheet">
+      <!-- <link href="css/swiper.css" rel="stylesheet">
+      <link href="css/magnific-popup.css" rel="stylesheet">
+      <link href="css/styles.css" rel="stylesheet"> 
+      <link href="css/toastr.min.css" rel="stylesheet"> --> 
+      <link href="css/jquery.dataTables.min.css" rel="stylesheet">
+      <link href="css/styles.css" rel="stylesheet"> 
+
+  <link rel="stylesheet" href="./css/plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="./css/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="./css/dist/css/adminlte.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  	
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon1.png">
+    </head>
+    <body>
+
+        <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+        <!-- Navigation -->
+     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom "  style="background-color: #00bfd8 !important;">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Evolo</a> -->
+
+        <!-- Image Logo -->
+        <a class="navbar-brand" href="index.html" style="margin-left: 5%;"><img src="images/logo.png" alt="alternative"></a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+       
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="importAsin.html"><i class="fas fa-upload"></i>ー括インポート<span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="checkproduct.html"><i class="fas fa-desktop"></i>ログページ</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="editShopping.html"><i class="fas fa-shopping-cart"></i>ショップ情報</a>
+                </li>
+              
+            </ul>
+            
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+    <div class="container-fluid">
+        <div class="row center">
+            <div class="col-md-2 " >
+                <div class="card" style="margin-top: 0px;">
+                  
+                    <!-- /.card-header -->
+                    <div class="card-body table-responsive p-0" >
+                        <form method="" id="importAsinForm">
+                                <div class="form-group" style="margin-top:20px; padding: 5px 10px 5px 10px">
+                                    <label for="comment">ASIN 入力(limit:100件)
+                                        :</label>
+                                    <textarea class="form-control" rows="18" id="productAsin" name="productAsin"></textarea>
+                                </div>
+                                  <input type="hidden" id="div1" />
+                                <button type="button" id="extract_products" class="btn btn-primary" style="margin:10px 10px 10px 10px; float: right;">ー括登録
+                                </button>
+                          </form>      
+                    </div>
+
+                    
+                    <!-- /.card-body -->
+                </div>
+            </div>
+        
+            <div class="col-md-10 " >
+                <div class="card" style="margin-top: 0px;">
+                    
+                    <div class="card-header" >
+                        <div id="myProgress">
+                            <div id="myBar"></div>
+                          </div>
+                         <div class="row">
+                            <div class="col-md-2" id="select_store"></div>
+                            <div class="col-md-2" id="paymentDiv"></div>
+                            <div class="col-md-2" id="returnDiv"></div>
+                            <div class="col-md-2" id="shippingDiv"></div>
+                            <div class="col-md-1" id="ratingDiv"></div>
+                            <div class="col-md-1" id="price_timeDiv"></div>
+                            <div class="col-md-1" style="display: flex; align-items: center;" id="list_product">
+                                <button class="btn btn-danger" style="height:35px;margin-top:11px;" id="list_product_btn">出品</button>
+                            </div>
+                             
+                         </div>
+                     </div>
+                    <!-- /.card-header -->
+                    <div class="card-body table-responsive p-0" >
+                        <table id="example" class="display" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>アマゾンカテゴリー</th>
+                                    <th>商品数</th>
+                                    <th>eBayカテゴリー</th>
+                                    <th>eBayカテゴリID</th>
+
+                                    
+                                </tr>
+                            </thead>
+                            
+                        </table>
+                    </div>
+
+                    
+                    <!-- /.card-body -->
+                </div>
+            </div>
+        </div>
+   </div>
+ 
+    </body>
+    </html>
+    <script src="js/jquery3.5.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/importAsinPage.js"></script>
+    <script src="js/scripts.js"></script> 

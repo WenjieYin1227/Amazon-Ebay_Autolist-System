@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 3 | User Profile</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+      <!-- SEO Meta Tags -->
+      <meta name="description" content="Create a stylish landing page for your business startup and get leads for the offered services with this HTML landing page template.">
+      <meta name="author" content="Inovatik">
+  
+      <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+      <meta property="og:site_name" content="" /> <!-- website name -->
+      <meta property="og:site" content="" /> <!-- website link -->
+      <meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+      <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+      <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+      <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+      <meta property="og:type" content="article" />
+  
+      <!-- Website Title -->
+      <title>Evolo - StartUp HTML Landing Page Template</title>
+      
+      <!-- Styles -->
+      <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="css/fontawesome-all.css" rel="stylesheet">
+      <link href="css/swiper.css" rel="stylesheet">
+      <link href="css/magnific-popup.css" rel="stylesheet">
+      <link href="css/styles.css" rel="stylesheet">
+      
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="./css/plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="./css/dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  	
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon1.png">
+
+    
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+    
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" style="background-color: #00bfd8 !important;">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+      
+
+        <!-- Image Logo -->
+        <a class="navbar-brand" href="index.html" style="margin-left: 50px;"><img src="images/logo.png" alt="alternative"></a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="mypage.html">マイページ<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="listing.html">出品</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="profit.html">利益</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="managestock.html">在庫管理</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="login.html">ログイン</a>
+                </li>
+
+                
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="register.html">登録</a>
+                </li>
+            </ul>
+           
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+  <!-- Main content -->
+  <section class="content" style="margin-top:90px;">
+    <div class="container-fluid">
+      <div class="row">
+      
+        <!-- /.col -->
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header p-2">
+              <ul class="nav nav-pills">
+             
+                <li class="nav-item"><a class="nav-link active" href="#settings" data-toggle="tab">ユーザー情報</a></li>
+                <li class="nav-item"><a class="nav-link" href="#jancode" data-toggle="tab">Jan Code</a></li>
+              </ul>
+            </div><!-- /.card-header -->
+            <div class="card-body">
+              <div class="tab-content">
+                <div class="active tab-pane" id="activity">
+                    <form class="form-horizontal">
+                        <div class="form-group row">
+                          <label for="inputName" class="col-sm-2 col-form-label">お名前</label>
+                          <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputName" placeholder="Name">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="inputEmail" class="col-sm-2 col-form-label">メールアドレス</label>
+                          <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="inputName2" class="col-sm-2 col-form-label">MWS API Token</label>
+                          <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputName2" placeholder="MWS API Token">
+                          </div>
+                        </div>             
+                       
+                        <div class="form-group row">
+                          <div class="offset-sm-2 col-sm-10">
+                            <button type="submit" class="btn btn-danger">確認</button>
+                          </div>
+                        </div>
+                      </form>
+                  <!-- /.post -->
+                </div>
+                <!-- /.tab-pane -->
+                <div class="tab-pane" id="jancode">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                  <h3 class="card-title">出品JAN Code テーブル</h3>
+                  
+                                  <div class="card-tools">
+                                    <div class="input-group input-group-sm" style="width: 250px;">
+                                      <input type="file" name="table_search" class="form-control float-right" placeholder="Jan code Upload">
+                  
+                                      <div class="input-group-append">
+                                        <button type="submit" class="btn btn-info"><i class="fas fa-upload"></i></button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- /.card-header -->
+                                <div class="card-body table-responsive p-0" style="height: 500px;">
+                                  <table class="table table-head-fixed">
+                                    <thead>
+                                      <tr>
+                                        <th>ID</th>
+                                        <th>Jan Code</th>
+                                        
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>4905678</td>
+                                          </tr>
+                                          <tr>
+                                            <td>2</td>
+                                            <td>4905679</td>
+                                          </tr>
+                                          <tr>
+                                            <td>3</td>
+                                            <td>4905689</td>
+                                          </tr>
+                                          <tr>
+                                            <td>4</td>
+                                            <td>4905678</td>
+                                          </tr>
+                                          <tr>
+                                            <td>5</td>
+                                            <td>4905670</td>
+                                          </tr>
+                                          <tr>
+                                            <td>6</td>
+                                            <td>4905678</td>
+                                          </tr>
+                                          <tr>
+                                            <td>7</td>
+                                            <td>4905678</td>
+                                          </tr>
+                                          <tr>
+                                            <td>8</td>
+                                            <td>4905678</td>
+                                          </tr>
+                                          <tr>
+                                            <td>9</td>
+                                            <td>4905678</td>
+                                          </tr>
+                                          <tr>
+                                            <td>10</td>
+                                            <td>4905678</td>
+                                          </tr>
+                                                                             
+                                    </tbody>
+                                  </table>
+                                </div>
+                                <!-- /.card-body -->
+                              </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                  <h3 class="card-title">Blacklist JAN Code テーブル</h3>
+                  
+                                  <div class="card-tools">
+                                    <div class="input-group input-group-sm" style="width: 250px;">
+                                      <input type="file" name="table_search" class="form-control float-right" placeholder="Search">
+                  
+                                      <div class="input-group-append">
+                                        <button type="submit" class="btn btn-info"><i class="fas fa-upload"></i></button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- /.card-header -->
+                                <div class="card-body table-responsive p-0" style="height: 500px;">
+                                  <table class="table table-head-fixed">
+                                    <thead>
+                                      <tr>
+                                        <th>ID</th>
+                                        <th>Jan Code</th>
+                                        
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>4905678</td>
+                                          </tr>
+                                          <tr>
+                                            <td>2</td>
+                                            <td>4905679</td>
+                                          </tr>
+                                          <tr>
+                                            <td>3</td>
+                                            <td>4905689</td>
+                                          </tr>
+                                          <tr>
+                                            <td>4</td>
+                                            <td>4905678</td>
+                                          </tr>
+                                          <tr>
+                                            <td>5</td>
+                                            <td>4905670</td>
+                                          </tr>
+                                          <tr>
+                                            <td>6</td>
+                                            <td>4905678</td>
+                                          </tr>
+                                          <tr>
+                                            <td>7</td>
+                                            <td>4905678</td>
+                                          </tr>
+                                          <tr>
+                                            <td>8</td>
+                                            <td>4905678</td>
+                                          </tr>
+                                          <tr>
+                                            <td>9</td>
+                                            <td>4905678</td>
+                                          </tr>
+                                          <tr>
+                                            <td>10</td>
+                                            <td>4905678</td>
+                                          </tr>
+                                                                             
+                                    </tbody>
+                                  </table>
+                                </div>
+                                <!-- /.card-body -->
+                              </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <!-- /.tab-pane -->
+
+                <div class="tab-pane" id="settings">
+                    <form class="form-horizontal">
+                        <div class="form-group row">
+                          <label for="inputName" class="col-sm-2 col-form-label">お名前</label>
+                          <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputName" placeholder="Name">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="inputEmail" class="col-sm-2 col-form-label">メールアドレス</label>
+                          <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="inputName2" class="col-sm-2 col-form-label">MWS API Token</label>
+                          <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputName2" placeholder="MWS API Token">
+                          </div>
+                        </div>             
+                       
+                        <div class="form-group row">
+                          <div class="offset-sm-2 col-sm-10">
+                            <button type="submit" class="btn btn-danger">確認</button>
+                          </div>
+                        </div>
+                      </form>
+                </div>
+                <!-- /.tab-pane -->
+              </div>
+              <!-- /.tab-content -->
+            </div><!-- /.card-body -->
+          </div>
+          <!-- /.nav-tabs-custom -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+
+
+<!-- Control Sidebar -->
+<aside class="control-sidebar control-sidebar-dark">
+  <!-- Control sidebar content goes here -->
+</aside>
+<!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+
+    <!-- end of copyright -->
+    
+    	
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+
+
+
+
+    
+
+<!-- jQuery -->
+<script src="./css/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="./css/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="./css/dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="./css/dist/js/demo.js"></script>
+<!-- jQuery -->
+<script src="./css/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="./css/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables -->
+<script src="./css/plugins/datatables/jquery.dataTables.js"></script>
+<script src="./css/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+<!-- AdminLTE App -->
+<script src="./css/dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="./css/dist/js/demo.js"></script>
+  <!-- Scripts -->
+  <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+  <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+  <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+  <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+  <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+  <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+  <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+  <script src="js/scripts.js"></script> <!-- Custom scripts -->
+<!-- page script -->
+<script>
+  $(function () {
+    $("#example1").DataTable();
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+    });
+  });
+</script>
+</body>
+</html>
+</body>
+</html>

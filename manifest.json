@@ -1,0 +1,41 @@
+{
+	"manifest_version": 2,
+
+	"name": "Amazon-Ebay",
+	"description": "A simple page-scraping extension for Chrome",
+	"version": "1.0",
+	"author": "@thomasforth",
+
+	"background": {
+		"scripts": ["jquery.js","background.js"]
+		
+	},
+
+	"permissions": [
+        "tabs",
+        "storage",
+        "http://*/",
+        "https://*/",
+		"http://3.135.237.73/index.php/"
+    ],
+
+  "content_security_policy": "script-src 'self' https://unpkg.com https://cdnjs.cloudflare.com; object-src 'self'",
+	"browser_action": {
+		"default_icon": "logo1.png"
+		// "default_popup": "popup.html"
+	},
+	"icons": {
+        "16": "logo1.png",
+        "32": "logo1.png",
+        "48": "logo1.png",
+        "128": "logo1.png"
+    },
+	 "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      // "css": ["onload.css"],
+      "js": ["jquery.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
